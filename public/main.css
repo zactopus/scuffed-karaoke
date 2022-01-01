@@ -1,0 +1,84 @@
+body {
+  background: #00ff00;
+  color: #f5f5f5;
+  font-weight: 400;
+  font-family: 'Heebo', sans-serif;
+}
+
+.loading {
+  font-weight: 900;
+  color: #ddd;
+  font-size: 15vh;
+}
+
+.karaoke {
+  padding: 0.5em;
+}
+
+.karaoke .t {
+  font-size: 8vh;
+  font-weight: bold;
+  color: #ddd;
+}
+
+.karaoke p {
+  margin: 0;
+  padding: 0.5em;
+  color: #eee;
+}
+
+.karaoke p.current {
+  background-color: white;
+}
+
+.karaoke div.current {
+  text-decoration: underline;
+}
+
+.karaoke span.current {
+  color: blue;
+}
+
+.karaoke span:before {
+  position: absolute;
+  top: -10px;
+  content: '';
+  display: block;
+  width: 10px;
+  height: 10px;
+  background: #f00;
+}
+
+.karaoke span.replaced {
+  font-weight: 900;
+  text-decoration: underline;
+  text-decoration-style: wavy;
+  text-decoration-color: red;
+}
+
+.karaoke span.past {
+  color: #d0c;
+}
+
+.karaoke .k,
+.karaoke .v,
+.karaoke .i,
+.karaoke .l,
+.karaoke .w {
+  display: none;
+}
+
+.karaoke p {
+  opacity: 0;
+}
+
+.karaoke p.current {
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 8vh;
+  background: #00ff00;
+  opacity: 1;
+}
